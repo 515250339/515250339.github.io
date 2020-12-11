@@ -1,0 +1,431 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="王彦翔"><meta name="copyright" content="王彦翔"><meta name="generator" content="Hexo 5.2.0"><meta name="theme" content="hexo-theme-yun"><title>python入门 | 心瘾</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.22/dist/yun/yun-markdown.min.css"><script src="//at.alicdn.com/t/font_1140697_ed8vp4atwoj.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><link id="light-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism.css" media="(prefers-color-scheme: light)"><link id="dark-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-tomorrow.css" media="(prefers-color-scheme: dark)"><link rel="shortcut icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"hostname":"example.com","root":"/","title":"气应三阳  氛澄六幕  翔乌初上云端","version":"1.3.0","mode":"auto","copycode":true,"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
+  </script><meta name="description" content="python基础题 现有一字符串,“卡巴斯基#杀毒软件#免费版#俄罗斯#”,解析出每个中文元素，打印出[卡巴斯基,杀毒软件,免费版,俄罗斯] 注意不能有空格 peo &#x3D; &#39;卡巴斯基#杀毒软件#免费版#俄罗斯#&#39; s &#x3D; peo.split(&#39;#&#39;) s.pop() print(s)  - 结果    &#96;&#96;&#96;python   [&#39;卡巴斯">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python入门">
+<meta property="og:url" content="http://example.com/2020/12/11/python%E5%9F%BA%E7%A1%80%E9%A2%98/index.html">
+<meta property="og:site_name" content="心瘾">
+<meta property="og:description" content="python基础题 现有一字符串,“卡巴斯基#杀毒软件#免费版#俄罗斯#”,解析出每个中文元素，打印出[卡巴斯基,杀毒软件,免费版,俄罗斯] 注意不能有空格 peo &#x3D; &#39;卡巴斯基#杀毒软件#免费版#俄罗斯#&#39; s &#x3D; peo.split(&#39;#&#39;) s.pop() print(s)  - 结果    &#96;&#96;&#96;python   [&#39;卡巴斯">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-12-11T08:10:32.501Z">
+<meta property="article:modified_time" content="2020-12-11T08:10:32.502Z">
+<meta property="article:author" content="王彦翔">
+<meta property="article:tag" content="python基础">
+<meta name="twitter:card" content="summary"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="王彦翔"><img width="96" loading="lazy" src="/Yun.png" alt="王彦翔"></a><div class="site-author-name"><a href="/about/">王彦翔</a></div><a class="site-name" href="/about/site.html">心瘾</a><sub class="site-subtitle">爱宇宇</sub><div class="site-desciption">翔翔的博客</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">2</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">2</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://qm.qq.com/cgi-bin/qm/qr?k=epvxdq1sknJe9JMj6J1LsBw4a6cI_2ln&amp;jump_from=webapi" title="作者 QQ 515250339" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/515250339" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=515250339" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/244892966" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://blog.csdn.net/weixin_45954124?spm=1000.2115.3001.5113" title="CSDN" target="_blank" style="color:#0088CC"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-telegram-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#python%E5%9F%BA%E7%A1%80%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">python基础题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%8E%B0%E6%9C%89%E4%B8%80%E5%AD%97%E7%AC%A6%E4%B8%B2-%E2%80%9C%E5%8D%A1%E5%B7%B4%E6%96%AF%E5%9F%BA-%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6-%E5%85%8D%E8%B4%B9%E7%89%88-%E4%BF%84%E7%BD%97%E6%96%AF-%E2%80%9D-%E8%A7%A3%E6%9E%90%E5%87%BA%E6%AF%8F%E4%B8%AA%E4%B8%AD%E6%96%87%E5%85%83%E7%B4%A0%EF%BC%8C%E6%89%93%E5%8D%B0%E5%87%BA-%E5%8D%A1%E5%B7%B4%E6%96%AF%E5%9F%BA-%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6-%E5%85%8D%E8%B4%B9%E7%89%88-%E4%BF%84%E7%BD%97%E6%96%AF-%E6%B3%A8%E6%84%8F%E4%B8%8D%E8%83%BD%E6%9C%89%E7%A9%BA%E6%A0%BC"><span class="toc-number">1.0.0.0.1.</span> <span class="toc-text">现有一字符串,“卡巴斯基#杀毒软件#免费版#俄罗斯#”,解析出每个中文元素，打印出[卡巴斯基,杀毒软件,免费版,俄罗斯] 注意不能有空格</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A6%82%E4%B8%8B%E5%AD%97%E7%AC%A6%E4%B8%B2-01-%E5%BC%A0%E4%B8%89-20-02-%E6%9D%8E%E5%9B%9B-30-03-%E7%8E%8B%E4%BA%94-40%E3%80%82%E3%80%82%E3%80%82%E3%80%82%E3%80%82%E3%80%82-%E8%A7%A3%E6%9E%90%E6%AF%8F%E4%B8%AA%E4%BA%BA%E5%88%86%E6%95%B0%E5%A4%9A%E5%B0%91%E3%80%82%E6%A0%B7%E5%BC%8F%E5%A6%82%E4%B8%8B"><span class="toc-number">1.0.0.0.2.</span> <span class="toc-text">如下字符串,01#张三#20-02#李四#30-03#王五#40。。。。。。,解析每个人分数多少。样式如下</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E8%BE%93%E5%87%BA%E5%87%BD%E6%95%B0print-%E6%89%93%E5%8D%B0%E8%BE%93%E5%87%BA%E4%B8%80%E4%B8%AA%E7%9F%A9%E5%BD%A2-20%E5%88%86"><span class="toc-number">1.0.0.0.3.</span> <span class="toc-text">利用输出函数print()打印输出一个矩形  (20分)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BC%96%E5%86%99%E4%BB%A3%E7%A0%81%EF%BC%8C%E5%AE%9E%E7%8E%B0%E6%B1%82100-200%E9%87%8C%E9%9D%A2%E6%89%80%E6%9C%89%E7%9A%84%E8%B4%A8%E6%95%B0-20%E5%88%86"><span class="toc-number">1.0.0.0.4.</span> <span class="toc-text">编写代码，实现求100-200里面所有的质数 (20分)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9C%89%E5%A6%82%E4%B8%8B%E5%88%97%E8%A1%A8%EF%BC%8C-nums-2-7-11-15-1-8-7-12-%E8%AF%B7%E6%89%BE%E5%88%B0%E5%88%97%E8%A1%A8%E4%B8%AD%E4%BB%BB%E6%84%8F%E4%B8%A4%E4%B8%AA%E5%85%83%E7%B4%A0%E7%9B%B8%E5%87%8F%E8%83%BD%E5%A4%9F%E7%AD%89%E4%BA%8E1%E6%88%96%E8%80%85-1%E7%9A%84%E5%85%83%E7%B4%A0%E9%9B%86%E5%90%88%EF%BC%8C%E5%88%97-2-1-1-7-12-11-%EF%BC%8820%E5%88%86%EF%BC%89"><span class="toc-number">1.0.0.0.5.</span> <span class="toc-text">有如下列表， nums&#x3D;[2,7,11,15,1,8,7,12]请找到列表中任意两个元素相减能够等于1或者-1的元素集合，列[(2,1), (1,7),(12,11)]  （20分）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%82%A3%E8%BD%A6%E6%B0%B4%E9%A9%AC%E9%BE%99%E7%9A%84%E4%BA%BA%E4%B8%96%E9%97%B4-%E9%82%A3%E6%A0%B7%E5%9C%B0%E6%9D%A5-%E9%82%A3%E6%A0%B7%E5%9C%B0%E5%8E%BB-%E5%A4%AA%E5%8C%86%E5%BF%99%E2%80%9D%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E5%87%BA%E7%8E%B0%E2%80%9D%E9%82%A3%E2%80%9D%E7%9A%84%E4%BD%8D%E7%BD%AE%EF%BC%88%E4%B8%8B%E6%A0%87%EF%BC%89"><span class="toc-number">1.0.0.0.6.</span> <span class="toc-text">那车水马龙的人世间,那样地来 那样地去,太匆忙”最后一次出现”那”的位置（下标）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E8%BE%93%E5%85%A5%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%AF%E5%90%A6%E6%98%AF-py-%E7%BB%93%E6%9D%9F"><span class="toc-number">1.0.0.0.7.</span> <span class="toc-text">判断输入的字符串是否是 .py 结束</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%AF%E5%90%A6%E6%98%AF%E5%9B%9E%E6%96%87"><span class="toc-number">1.0.0.0.8.</span> <span class="toc-text">判断一个字符串是否是回文</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BC%96%E5%86%99%E4%BB%A3%E7%A0%81%EF%BC%8C%E5%AE%9E%E7%8E%B0%E6%B1%82100-200%E9%87%8C%E9%9D%A2%E6%89%80%E6%9C%89%E7%9A%84%E5%A5%87%E6%95%B0-20%E5%88%86"><span class="toc-number">1.0.0.0.9.</span> <span class="toc-text">编写代码，实现求100-200里面所有的奇数 (20分)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8F%B3%E7%A7%BBn%E4%BD%8D-%E4%BE%8B%E5%A6%82-%E2%80%9Chello-world%E2%80%9D-%E5%8F%B3%E7%A7%BB%E4%B8%A4%E4%BD%8D%E5%90%8Eldhello-wor"><span class="toc-number">1.0.0.0.10.</span> <span class="toc-text">将字符串右移n位,例如 “hello world” 右移两位后ldhello wor</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%B7%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%EF%BC%8C%E7%94%A8%E6%9D%A5%E5%8F%96%E5%87%BA1%E2%80%94100%EF%BC%88%E5%9D%87%E5%8C%85%E5%90%AB%EF%BC%89%E4%B8%AD3%E7%9A%84%E5%80%8D%E6%95%B0%E6%88%96%E8%80%85%E5%B8%A6%E6%9C%89%E6%95%B0%E5%AD%973%E7%9A%84%E6%89%80%E6%9C%89%E6%95%B4%E6%95%B0"><span class="toc-number">1.0.0.0.11.</span> <span class="toc-text">请手写一个函数，用来取出1—100（均包含）中3的倍数或者带有数字3的所有整数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#a-%E2%80%9CaAsmr3idd4bgs7Dlsf9eAF%E2%80%9D-%E8%AF%B7%E5%86%99%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%EF%BC%8C%E5%8F%AF%E4%BB%A5%E6%89%93%E5%8D%B0%E5%87%BA%E8%AF%A5%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E5%87%BA%E7%8E%B0%E9%A2%91%E7%8E%87%E6%9C%80%E9%AB%98%E7%9A%84%E5%AD%97%E6%AF%8D"><span class="toc-number">1.0.0.0.12.</span> <span class="toc-text">a &#x3D; “aAsmr3idd4bgs7Dlsf9eAF” 请写一个函数，可以打印出该字符串中出现频率最高的字母</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%90%E4%B8%AA%E6%96%87%E4%BB%B6%E7%9A%84%E5%AD%97%E8%8A%82%E6%95%B0%E4%B8%BA102324123499123%EF%BC%8C%E5%86%99%E5%87%BD%E6%95%B0%E5%88%A9%E7%94%A8%E5%B7%A6%E7%A7%BB%E8%AE%A1%E7%AE%97%E8%AF%A5%E6%96%87%E4%BB%B6%E6%8C%89%E7%85%A7kb%E4%B8%8Emb%E8%AE%A1%E7%AE%97%E5%BE%97%E5%88%B0%E7%9A%84%E5%A4%A7%E5%B0%8F"><span class="toc-number">1.0.0.0.13.</span> <span class="toc-text">某个文件的字节数为102324123499123，写函数利用左移计算该文件按照kb与mb计算得到的大小</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#str2-%E2%80%9CThis-is-the-voa-special-English-health-report%E2%80%9D-%E5%86%99%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%EF%BC%8C%E7%BB%9F%E8%AE%A1%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E5%8D%95%E8%AF%8D%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%AA%E6%95%B0%EF%BC%8C%E6%B3%A8%E6%84%8F%E6%98%AF%E5%8D%95%E8%AF%8D%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AD%97%E6%AF%8D"><span class="toc-number">1.0.0.0.14.</span> <span class="toc-text">str2 &#x3D; “This is the voa special English,health,report”  写一个函数，统计字符串中单词出现的个数，注意是单词而不是字母</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#s-%E2%80%98test%E2%80%98-%E5%86%99%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%EF%BC%8C%E8%83%BD%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E7%BD%91%E5%9D%80%E6%8F%90%E5%8F%96%E5%87%BA%E6%9D%A5%EF%BC%8C%E5%8D%B3%E6%8F%90%E5%8F%96%E5%87%BAwww-test-com"><span class="toc-number">1.0.0.0.15.</span> <span class="toc-text">s &#x3D; ‘test‘  写一个函数，能将字符串中的网址提取出来，即提取出www.test.com</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#My-str-%E2%80%9811sdsfsdf45sfxcv67qwe-9%E2%80%99-%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%EF%BC%8C%E8%AE%A1%E7%AE%97%E5%87%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E6%89%80%E6%9C%89%E6%95%B0%E5%AD%97%E7%9A%84%E5%92%8C"><span class="toc-number">1.0.0.0.16.</span> <span class="toc-text">My_str &#x3D; ‘11sdsfsdf45sfxcv67qwe_9’ 手写一个函数，计算出字符串中所有数字的和</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%EF%BC%8C%E5%B0%86-%E2%80%99hello-xiao-mi%E2%80%99-%E4%BD%9C%E4%B8%BA%E5%8F%82%E6%95%B0%E8%BE%93%E5%85%A5%EF%BC%8C%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E-%E2%80%98mi-xiao-hello%E2%80%99%EF%BC%8C%E6%B3%A8%E6%84%8F%E6%98%AF%E5%8D%95%E8%AF%8D%E4%BD%8D%E7%BD%AE%E9%A2%A0%E5%80%92%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AD%97%E6%AF%8D%E4%BD%8D%E7%BD%AE%E9%A2%A0%E5%80%92"><span class="toc-number">1.0.0.0.17.</span> <span class="toc-text">手写一个函数，将 ’hello xiao mi’ 作为参数输入，函数返回 ‘mi xiao hello’，注意是单词位置颠倒，而不是字母位置颠倒</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://example.com/2020/12/11/python%E5%9F%BA%E7%A1%80%E9%A2%98/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="王彦翔"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="心瘾"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">python入门</h1><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2020-12-11 16:10:32" itemprop="dateCreated datePublished" datetime="2020-12-11T16:10:32+08:00">2020-12-11</time></div><div class="post-classify"><span class="post-tag"><a class="tag" href="/tags/python%E5%9F%BA%E7%A1%80/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">python基础</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><h1 id="python基础题"><a href="#python基础题" class="headerlink" title="python基础题"></a>python基础题</h1><ol>
+<li><h5 id="现有一字符串-“卡巴斯基-杀毒软件-免费版-俄罗斯-”-解析出每个中文元素，打印出-卡巴斯基-杀毒软件-免费版-俄罗斯-注意不能有空格"><a href="#现有一字符串-“卡巴斯基-杀毒软件-免费版-俄罗斯-”-解析出每个中文元素，打印出-卡巴斯基-杀毒软件-免费版-俄罗斯-注意不能有空格" class="headerlink" title="现有一字符串,“卡巴斯基#杀毒软件#免费版#俄罗斯#”,解析出每个中文元素，打印出[卡巴斯基,杀毒软件,免费版,俄罗斯] 注意不能有空格"></a>现有一字符串,“卡巴斯基#杀毒软件#免费版#俄罗斯#”,解析出每个中文元素，打印出[卡巴斯基,杀毒软件,免费版,俄罗斯] 注意不能有空格</h5><ul>
+<li><pre><code class="python">peo = &#39;卡巴斯基#杀毒软件#免费版#俄罗斯#&#39;
+s = peo.split(&#39;#&#39;)
+s.pop()
+print(s)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  [&#39;卡巴斯基&#39;, &#39;杀毒软件&#39;, &#39;免费版&#39;, &#39;俄罗斯&#39;]</code></pre>
+
+
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><h5 id="如下字符串-01-张三-20-02-李四-30-03-王五-40。。。。。。-解析每个人分数多少。样式如下"><a href="#如下字符串-01-张三-20-02-李四-30-03-王五-40。。。。。。-解析每个人分数多少。样式如下" class="headerlink" title="如下字符串,01#张三#20-02#李四#30-03#王五#40。。。。。。,解析每个人分数多少。样式如下"></a>如下字符串,01#张三#20-02#李四#30-03#王五#40。。。。。。,解析每个人分数多少。样式如下</h5><ul>
+<li><pre><code class="python">aa = &#39;01#张三#20-02#李四#30-03#王五#40&#39;
+aa = aa.replace(&#39;#&#39;, &#39; &#39;)
+s = aa.split(&#39;-&#39;)
+for i in s:
+    print(&#39;#&#39;,i)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  # 01 张三 20
+  # 02 李四 30
+  # 03 王五 40</code></pre>
+
+
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="3">
+<li><h5 id="利用输出函数print-打印输出一个矩形-20分"><a href="#利用输出函数print-打印输出一个矩形-20分" class="headerlink" title="利用输出函数print()打印输出一个矩形  (20分)"></a>利用输出函数print()打印输出一个矩形  (20分)</h5><ul>
+<li><pre><code class="python">print(&#39;*&#39;*10)
+print(&#39;*&#39;*10)
+print(&#39;*&#39;*10)
+print(&#39;*&#39;*10)
+print(&#39;*&#39;*10)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  **********
+  **********
+  **********
+  **********
+  **********</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="编写代码，实现求100-200里面所有的质数-20分"><a href="#编写代码，实现求100-200里面所有的质数-20分" class="headerlink" title="编写代码，实现求100-200里面所有的质数 (20分)"></a>编写代码，实现求100-200里面所有的质数 (20分)</h5><ul>
+<li><pre><code class="python">for i in range(100,201):
+    for j in range(2,i):
+        if i % j == 0:
+            break
+    else:
+        print(i)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  101
+  103
+  107
+  109
+  113
+  127
+  131
+  137
+  139
+  149
+  151
+  157
+  163
+  167
+  173
+  179
+  181
+  191
+  193
+  197
+  199</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="有如下列表，-nums-2-7-11-15-1-8-7-12-请找到列表中任意两个元素相减能够等于1或者-1的元素集合，列-2-1-1-7-12-11-（20分）"><a href="#有如下列表，-nums-2-7-11-15-1-8-7-12-请找到列表中任意两个元素相减能够等于1或者-1的元素集合，列-2-1-1-7-12-11-（20分）" class="headerlink" title="有如下列表， nums=[2,7,11,15,1,8,7,12]请找到列表中任意两个元素相减能够等于1或者-1的元素集合，列[(2,1), (1,7),(12,11)]  （20分）"></a>有如下列表， nums=[2,7,11,15,1,8,7,12]请找到列表中任意两个元素相减能够等于1或者-1的元素集合，列[(2,1), (1,7),(12,11)]  （20分）</h5><ul>
+<li><pre><code class="python">nums=[2,7,11,15,1,8,7,12]
+a = []
+for i in nums:
+    for j in nums:
+        if (i - j == 1 or i - j == -1) or (j - i == 1 or j - i == -1):
+            a.append((i,j))
+print(set(a),end=&#39; &#39;)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  &#123;(1, 2), (7, 8), (2, 1), (8, 7), (12, 11), (11, 12)&#125; </code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="那车水马龙的人世间-那样地来-那样地去-太匆忙”最后一次出现”那”的位置（下标）"><a href="#那车水马龙的人世间-那样地来-那样地去-太匆忙”最后一次出现”那”的位置（下标）" class="headerlink" title="那车水马龙的人世间,那样地来 那样地去,太匆忙”最后一次出现”那”的位置（下标）"></a>那车水马龙的人世间,那样地来 那样地去,太匆忙”最后一次出现”那”的位置（下标）</h5><ul>
+<li><pre><code class="python">suv = &#39;那车水马龙的人世间,那样地来 那样地去,太匆&#39;
+print(suv.rindex(&#39;那&#39;))
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  15</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="判断输入的字符串是否是-py-结束"><a href="#判断输入的字符串是否是-py-结束" class="headerlink" title="判断输入的字符串是否是 .py 结束"></a>判断输入的字符串是否是 .py 结束</h5><ul>
+<li><pre><code class="python">s = input(&#39;请输入字符串：&#39;)
+if s.endswith(&#39;.py&#39;):
+    print(&#39;是.py结束&#39;)
+else:
+    print(&#39;不是&#39;)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  请输入字符串：.py
+  是.py结束</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="判断一个字符串是否是回文"><a href="#判断一个字符串是否是回文" class="headerlink" title="判断一个字符串是否是回文"></a>判断一个字符串是否是回文</h5><ul>
+<li><pre><code class="python">ss = input(&#39;请输入字符串：&#39;)
+if ss == ss[::-1]:
+    print(&#39;是&#39;)
+else:
+    print(&#39;不是&#39;)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  请输入字符串：323
+  是</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="编写代码，实现求100-200里面所有的奇数-20分"><a href="#编写代码，实现求100-200里面所有的奇数-20分" class="headerlink" title="编写代码，实现求100-200里面所有的奇数 (20分)"></a>编写代码，实现求100-200里面所有的奇数 (20分)</h5><ul>
+<li><pre><code class="python">for i in range(101,201,2):
+    print(i)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  101
+  103
+  105
+  .
+  .
+  .
+  .
+  .
+  .
+  195
+  197
+  199</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="将字符串右移n位-例如-“hello-world”-右移两位后ldhello-wor"><a href="#将字符串右移n位-例如-“hello-world”-右移两位后ldhello-wor" class="headerlink" title="将字符串右移n位,例如 “hello world” 右移两位后ldhello wor"></a>将字符串右移n位,例如 “hello world” 右移两位后ldhello wor</h5><ul>
+<li><pre><code class="python">s = int(input(&#39;请输入右移几位：&#39;))
+dd = &#39;hello world&#39;
+ss = dd[-s:] + dd[:-s]
+print(ss)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  请输入右移几位：2
+  ldhello wor</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="请手写一个函数，用来取出1—100（均包含）中3的倍数或者带有数字3的所有整数"><a href="#请手写一个函数，用来取出1—100（均包含）中3的倍数或者带有数字3的所有整数" class="headerlink" title="请手写一个函数，用来取出1—100（均包含）中3的倍数或者带有数字3的所有整数"></a>请手写一个函数，用来取出1—100（均包含）中3的倍数或者带有数字3的所有整数</h5><ul>
+<li><pre><code class="python">for i in range(1,101):
+    if i % 3 == 0 or &#39;7&#39; in &#39;i&#39;:
+        print(i)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  3
+  6
+  9
+  12
+  15
+  18
+  .
+  .
+  .
+  .
+  87
+  90
+  93
+  96
+  99</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="a-“aAsmr3idd4bgs7Dlsf9eAF”-请写一个函数，可以打印出该字符串中出现频率最高的字母"><a href="#a-“aAsmr3idd4bgs7Dlsf9eAF”-请写一个函数，可以打印出该字符串中出现频率最高的字母" class="headerlink" title="a = “aAsmr3idd4bgs7Dlsf9eAF” 请写一个函数，可以打印出该字符串中出现频率最高的字母"></a>a = “aAsmr3idd4bgs7Dlsf9eAF” 请写一个函数，可以打印出该字符串中出现频率最高的字母</h5><ul>
+<li><pre><code class="python">def ss(a,d,dd,a1):
+    for i in a:
+        if d &lt;= a.count(i):
+            dd = i
+            d = a.count(i)
+        a1.append((d,dd))
+    a1 = set(a1)
+    a2 = str(a1)
+    print(a2)
+ss(input(&#39;&#39;),0,&#39;&#39;,[])
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  aAsmr3idd4bgs7Dlsf9eAF
+  &#123;(3, &#39;s&#39;), (1, &#39;a&#39;), (2, &#39;A&#39;)&#125;</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="某个文件的字节数为102324123499123，写函数利用左移计算该文件按照kb与mb计算得到的大小"><a href="#某个文件的字节数为102324123499123，写函数利用左移计算该文件按照kb与mb计算得到的大小" class="headerlink" title="某个文件的字节数为102324123499123，写函数利用左移计算该文件按照kb与mb计算得到的大小"></a>某个文件的字节数为102324123499123，写函数利用左移计算该文件按照kb与mb计算得到的大小</h5><ul>
+<li><pre><code class="python">def s(a):
+    d = a / 1024
+    print(d / 1024,&#39;kb&#39;)
+    print(d / 1024 / 1024,&#39;mb&#39;)
+s(102324123499123)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  97583888.52989483 kb
+  95296.76614247542 mb</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="str2-“This-is-the-voa-special-English-health-report”-写一个函数，统计字符串中单词出现的个数，注意是单词而不是字母"><a href="#str2-“This-is-the-voa-special-English-health-report”-写一个函数，统计字符串中单词出现的个数，注意是单词而不是字母" class="headerlink" title="str2 = “This is the voa special English,health,report”  写一个函数，统计字符串中单词出现的个数，注意是单词而不是字母"></a>str2 = “This is the voa special English,health,report”  写一个函数，统计字符串中单词出现的个数，注意是单词而不是字母</h5><ul>
+<li><pre><code class="python">def ss(str2):
+    s = str2.rsplit(&#39; &#39;)
+    print(len(s))
+
+ss(&quot;This is the voa special English,health,report&quot;)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  6</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="s-‘test‘-写一个函数，能将字符串中的网址提取出来，即提取出www-test-com"><a href="#s-‘test‘-写一个函数，能将字符串中的网址提取出来，即提取出www-test-com" class="headerlink" title="s = ‘test‘  写一个函数，能将字符串中的网址提取出来，即提取出www.test.com"></a>s = ‘<a href="www.test.com">test</a>‘  写一个函数，能将字符串中的网址提取出来，即提取出<a target="_blank" rel="noopener" href="http://www.test.com/">www.test.com</a></h5><ul>
+<li><pre><code class="python">def ss(s):
+    d = s.find(&#39;&quot;&#39;)
+    d1 = s.rfind(&#39;&quot;&#39;)
+    print(s[d:d1+1])
+ss(&#39;&lt;a href=&quot;www.test.com&quot;&gt;test&lt;/a&gt;&#39;)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  &quot;www.test.com&quot;</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><p>请手写一个函数，用来取出1—100（均包含）中6的倍数或者带有数字6的所有整数</p>
+<ul>
+<li><pre><code class="python">def sub():
+    for i in range(1,101):
+    if &#39;6&#39; in &#39;i&#39; or i % 6 == 0:
+            print(i)
+sub()
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  6
+  12
+  18
+  24
+  30
+  36
+  42
+  48
+  54
+  60
+  66
+  72
+  78
+  84
+  90
+  96</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="My-str-‘11sdsfsdf45sfxcv67qwe-9’-手写一个函数，计算出字符串中所有数字的和"><a href="#My-str-‘11sdsfsdf45sfxcv67qwe-9’-手写一个函数，计算出字符串中所有数字的和" class="headerlink" title="My_str = ‘11sdsfsdf45sfxcv67qwe_9’ 手写一个函数，计算出字符串中所有数字的和"></a>My_str = ‘11sdsfsdf45sfxcv67qwe_9’ 手写一个函数，计算出字符串中所有数字的和</h5><ul>
+<li><pre><code class="python">def sub(My_str,sum):
+    for i in My_str:
+        if i.isdigit():
+            sum += int(i)
+    print(sum)
+
+sub(&#39;11sdsfsdf45sfxcv67qwe_9&#39;,0)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  33</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="手写一个函数，将-’hello-xiao-mi’-作为参数输入，函数返回-‘mi-xiao-hello’，注意是单词位置颠倒，而不是字母位置颠倒"><a href="#手写一个函数，将-’hello-xiao-mi’-作为参数输入，函数返回-‘mi-xiao-hello’，注意是单词位置颠倒，而不是字母位置颠倒" class="headerlink" title="手写一个函数，将 ’hello xiao mi’ 作为参数输入，函数返回 ‘mi xiao hello’，注意是单词位置颠倒，而不是字母位置颠倒"></a>手写一个函数，将 ’hello xiao mi’ 作为参数输入，函数返回 ‘mi xiao hello’，注意是单词位置颠倒，而不是字母位置颠倒</h5><ul>
+<li><pre><code class="python">def sub(str):
+    a = str.split(&#39; &#39;)
+    a.reverse()
+    s =&#39; &#39;.join(a)
+    print(s)
+sub(&#39;hello xiao mi&#39;)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  mi xiao hello</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><p>年月日</p>
+<ul>
+<li><pre><code class="python">year = int(input(&quot;请输入年分：&quot;))
+month = int(input(&quot;请输入月份：&quot;))
+day = int(input(&quot;请输入日：&quot;))
+day1 = [31,28,31,30,31,30,31,31,30,31,30,31]
+if year % 400 == 0 or year % 4 == 0 and year % 100 !=0 :
+    day1[1]=29
+i = 0
+if 12&gt;= month &gt;=1:
+    while i &lt; month - 1 :
+        day += day1[i]
+        i += 1
+    print(&quot;是一年的第%d天&quot; % day)
+else:
+    print(&#39;月份输入错误&#39;)
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  请输入年分：2020
+  请输入月份：12
+  请输入日：5
+  是一年的第340天</code></pre></code></pre>
+</li>
+</ul>
+</li>
+<li><p>99乘法表</p>
+<ul>
+<li><pre><code class="python">i=0
+while i&lt;9:
+
+    j=0
+    while j&lt;=i:
+        print(&quot;%d*%d=%d\t&quot;%(j+1, i+1, (j+1)*(i+1)),end=&quot;&quot;)
+        j+=1
+
+    print(&quot;&quot;)
+
+    i+=1
+&#39;&#39;&#39;
+
+#一般情况下:
+#如果i从1开始,那么i&lt;=一个值,那么就循环多少次
+#如果i从0开始,那么i&lt;一个值,那么就循环多少次
+i=1
+while i&lt;=9:
+
+    j=1
+    while j&lt;=i:
+        print(&quot;%d*%d=%d\t&quot;%(j, i, j*i),end=&quot;&quot;)
+        j+=1
+
+    print(&quot;&quot;)
+
+    i+=1
+<pre class="language-none"><code class="language-none">
+- 结果
+
+  &#96;&#96;&#96;python
+  1*1&#x3D;1	
+  1*2&#x3D;2	2*2&#x3D;4	
+  1*3&#x3D;3	2*3&#x3D;6	3*3&#x3D;9	
+  1*4&#x3D;4	2*4&#x3D;8	3*4&#x3D;12	4*4&#x3D;16	
+  1*5&#x3D;5	2*5&#x3D;10	3*5&#x3D;15	4*5&#x3D;20	5*5&#x3D;25	
+  1*6&#x3D;6	2*6&#x3D;12	3*6&#x3D;18	4*6&#x3D;24	5*6&#x3D;30	6*6&#x3D;36	
+  1*7&#x3D;7	2*7&#x3D;14	3*7&#x3D;21	4*7&#x3D;28	5*7&#x3D;35	6*7&#x3D;42	7*7&#x3D;49	
+  1*8&#x3D;8	2*8&#x3D;16	3*8&#x3D;24	4*8&#x3D;32	5*8&#x3D;40	6*8&#x3D;48	7*8&#x3D;56	8*8&#x3D;64	
+  1*9&#x3D;9	2*9&#x3D;18	3*9&#x3D;27	4*9&#x3D;36	5*9&#x3D;45	6*9&#x3D;54	7*9&#x3D;63	8*9&#x3D;72	9*9&#x3D;81	</code></pre>
+
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+</div><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="打赏" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hand-coin-line"></use></svg></span><div id="reward-comment">I'm so cute. Please give me money.</div><div id="qr" style="display:none;"><div style="display:inline-block"><a href="images/zfb.jpg"><img loading="lazy" src="/images/zfb.jpg" alt="支付宝" title="支付宝"></a><div><span style="color:#00A3EE"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-alipay-line"></use></svg></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>王彦翔</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="http://example.com/2020/12/11/python%E5%9F%BA%E7%A1%80%E9%A2%98/" title="python入门">http://example.com/2020/12/11/python%E5%9F%BA%E7%A1%80%E9%A2%98/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> 许可协议。</li></ul></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2020/12/11/nginx+uwsgi/" rel="prev" title="配置Uwsgi+Nginx+Django+Vue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left-s-line"></use></svg><span class="post-nav-text">配置Uwsgi+Nginx+Django+Vue</span></a></div><div class="post-nav-item"></div></div></div><div id="comment"><div class="comment-tooltip text-center"><span>点击按钮跳转 GitHub Issues 评论。</span><br><span>若没有本文 Issue，您可以使用 Comment 模版新建。</span><br><a class="hty-button hty-button--raised" id="github-issues" target="_blank" rel="noopener" href="https://github.com/YunYouJun/yunyoujun.github.io/issues?q=is:issue+python入门">GitHub Issues</a></div></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2020 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> 王彦翔</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.2.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.3.0</span></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a></div><script defer src="/js/utils.js"></script><script defer src="/js/hexo-theme-yun.js"></script></body></html>
