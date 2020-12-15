@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>心瘾</title>
-  <icon>http://example.com/icon.png</icon>
+  <icon>https://wyx6.top/icon.png</icon>
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://wyx6.top/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://wyx6.top/"/>
   <updated>2020-12-15T12:41:37.873Z</updated>
-  <id>http://example.com/</id>
+  <id>https://wyx6.top/</id>
   
   <author>
     <name>王彦翔</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>python基础垃圾回收机制</title>
-    <link href="http://example.com/2020/12/15/python%E5%9F%BA%E7%A1%80%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/"/>
-    <id>http://example.com/2020/12/15/python%E5%9F%BA%E7%A1%80%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</id>
+    <link href="https://wyx6.top/2020/12/15/python%E5%9F%BA%E7%A1%80%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/"/>
+    <id>https://wyx6.top/2020/12/15/python%E5%9F%BA%E7%A1%80%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</id>
     <published>2020-12-15T12:41:37.000Z</published>
     <updated>2020-12-15T12:41:37.873Z</updated>
     
@@ -35,14 +35,14 @@
     
     
     
-    <category term="python基础" scheme="http://example.com/tags/python%E5%9F%BA%E7%A1%80/"/>
+    <category term="python基础" scheme="https://wyx6.top/tags/python%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>使用hexo搭建自己的高逼格博客</title>
-    <link href="http://example.com/2020/12/15/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%AB%98%E9%80%BC%E6%A0%BC%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://example.com/2020/12/15/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%AB%98%E9%80%BC%E6%A0%BC%E5%8D%9A%E5%AE%A2/</id>
+    <link href="https://wyx6.top/2020/12/15/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%AB%98%E9%80%BC%E6%A0%BC%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://wyx6.top/2020/12/15/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%AB%98%E9%80%BC%E6%A0%BC%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-12-15T03:48:52.000Z</published>
     <updated>2020-12-15T07:41:34.906Z</updated>
     
@@ -58,14 +58,14 @@
     
     
     
-    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    <category term="hexo" scheme="https://wyx6.top/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>docker命令详解</title>
-    <link href="http://example.com/2020/12/15/ubuntu%20docker%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/"/>
-    <id>http://example.com/2020/12/15/ubuntu%20docker%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/</id>
+    <link href="https://wyx6.top/2020/12/15/ubuntu%20docker%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://wyx6.top/2020/12/15/ubuntu%20docker%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/</id>
     <published>2020-12-15T03:10:21.000Z</published>
     <updated>2020-12-15T07:48:39.537Z</updated>
     
@@ -81,14 +81,14 @@
     
     
     
-    <category term="docker" scheme="http://example.com/tags/docker/"/>
+    <category term="docker" scheme="https://wyx6.top/tags/docker/"/>
     
   </entry>
   
   <entry>
     <title>配置Uwsgi+Nginx+Django+Vue</title>
-    <link href="http://example.com/2020/12/11/nginx+uwsgi/"/>
-    <id>http://example.com/2020/12/11/nginx+uwsgi/</id>
+    <link href="https://wyx6.top/2020/12/11/nginx+uwsgi/"/>
+    <id>https://wyx6.top/2020/12/11/nginx+uwsgi/</id>
     <published>2020-12-11T08:59:26.000Z</published>
     <updated>2020-12-15T07:45:30.333Z</updated>
     
@@ -105,14 +105,14 @@
     
     
     
-    <category term="djang" scheme="http://example.com/tags/djang/"/>
+    <category term="djang" scheme="https://wyx6.top/tags/djang/"/>
     
   </entry>
   
   <entry>
     <title>python入门</title>
-    <link href="http://example.com/2020/12/11/python%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
-    <id>http://example.com/2020/12/11/python%E5%9F%BA%E7%A1%80%E9%A2%98/</id>
+    <link href="https://wyx6.top/2020/12/11/python%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
+    <id>https://wyx6.top/2020/12/11/python%E5%9F%BA%E7%A1%80%E9%A2%98/</id>
     <published>2020-12-11T08:10:32.501Z</published>
     <updated>2020-12-15T07:41:49.456Z</updated>
     
@@ -129,7 +129,7 @@
     
     
     
-    <category term="python基础" scheme="http://example.com/tags/python%E5%9F%BA%E7%A1%80/"/>
+    <category term="python基础" scheme="https://wyx6.top/tags/python%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
