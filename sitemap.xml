@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wyx6.top/2020/12/20/%E5%BE%AE%E5%8D%9A%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95/</loc>
+    
+    <lastmod>2020-12-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wyx6.top/2020/12/22/python%E4%B8%8EMongodb%E6%93%8D%E4%BD%9C/</loc>
+    
+    <lastmod>2020-12-22</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wyx6.top/2020/12/22/%E8%A3%85%E9%A5%B0%E5%99%A8/</loc>
     
     <lastmod>2020-12-22</lastmod>
@@ -87,13 +101,6 @@
   
   <url>
     <loc>https://wyx6.top/2020/12/20/%E9%92%89%E9%92%89%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95/</loc>
-    
-    <lastmod>2020-12-21</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/2020/12/20/%E5%BE%AE%E5%8D%9A%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95/</loc>
     
     <lastmod>2020-12-21</lastmod>
     
@@ -214,7 +221,21 @@
   </url>
   
   <url>
+    <loc>https://wyx6.top/tags/Mongodb/</loc>
+    <lastmod>2020-12-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wyx6.top/tags/pypy3/</loc>
+    <lastmod>2020-12-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wyx6.top/tags/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</loc>
     <lastmod>2020-12-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -249,6 +270,13 @@
   </url>
   
   <url>
+    <loc>https://wyx6.top/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/</loc>
+    <lastmod>2020-12-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wyx6.top/tags/%E9%99%90%E6%B5%81/</loc>
     <lastmod>2020-12-22</lastmod>
     <changefreq>daily</changefreq>
@@ -264,20 +292,6 @@
   
   <url>
     <loc>https://wyx6.top/tags/hexo/</loc>
-    <lastmod>2020-12-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/tags/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</loc>
-    <lastmod>2020-12-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/</loc>
     <lastmod>2020-12-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
