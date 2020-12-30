@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>django 支付宝沙箱支付流程</title>
+      <title>django 跨境支付paypal流程</title>
       <link href="2020/12/31/django%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98paypal/"/>
       <url>2020/12/31/django%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98paypal/</url>
       
@@ -35,7 +35,7 @@
     
     
     <entry>
-      <title>django 支付宝沙箱支付流程</title>
+      <title>django 微信扫码支付流程</title>
       <link href="2020/12/31/django%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E6%94%AF%E4%BB%98/"/>
       <url>2020/12/31/django%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E6%94%AF%E4%BB%98/</url>
       
@@ -177,13 +177,13 @@
       
         <tags>
             
-            <tag> redis </tag>
-            
             <tag> django </tag>
             
             <tag> vue </tag>
             
             <tag> websocket </tag>
+            
+            <tag> redis </tag>
             
         </tags>
       
@@ -761,9 +761,9 @@
             
             <tag> django </tag>
             
-            <tag> python </tag>
-            
             <tag> vue </tag>
+            
+            <tag> python </tag>
             
         </tags>
       

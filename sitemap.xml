@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wyx6.top/2020/12/31/django%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98paypal/</loc>
+    
+    <lastmod>2020-12-30</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wyx6.top/2020/12/31/django%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E6%94%AF%E4%BB%98/</loc>
+    
+    <lastmod>2020-12-30</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wyx6.top/2020/12/15/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%AB%98%E9%80%BC%E6%A0%BC%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2020-12-30</lastmod>
@@ -45,20 +59,6 @@
   
   <url>
     <loc>https://wyx6.top/2020/12/31/django%E6%94%AF%E4%BB%98%E5%AE%9D%E6%B2%99%E7%AE%B1%E6%94%AF%E4%BB%98%E6%8E%A5%E5%8F%A3/</loc>
-    
-    <lastmod>2020-12-30</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/2020/12/31/django%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%89%AB%E7%A0%81%E6%94%AF%E4%BB%98/</loc>
-    
-    <lastmod>2020-12-30</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/2020/12/31/django%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98paypal/</loc>
     
     <lastmod>2020-12-30</lastmod>
     
@@ -256,21 +256,7 @@
 
   
   <url>
-    <loc>https://wyx6.top/tags/redis/</loc>
-    <lastmod>2020-12-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wyx6.top/tags/django/</loc>
-    <lastmod>2020-12-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/tags/python/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -305,6 +291,13 @@
   </url>
   
   <url>
+    <loc>https://wyx6.top/tags/paypal%E6%94%AF%E4%BB%98/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wyx6.top/tags/%E6%B2%99%E7%AE%B1%E6%94%AF%E4%BB%98/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
@@ -319,20 +312,6 @@
   </url>
   
   <url>
-    <loc>https://wyx6.top/tags/paypal%E6%94%AF%E4%BB%98/</loc>
-    <lastmod>2020-12-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/tags/%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95/</loc>
-    <lastmod>2020-12-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wyx6.top/tags/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
@@ -340,35 +319,7 @@
   </url>
   
   <url>
-    <loc>https://wyx6.top/tags/python%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2020-12-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/tags/pypy3/</loc>
-    <lastmod>2020-12-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/tags/%E8%BF%9B%E7%A8%8B/</loc>
-    <lastmod>2020-12-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/tags/%E7%BA%BF%E7%A8%8B/</loc>
-    <lastmod>2020-12-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/tags/%E5%8D%8F%E7%A8%8B/</loc>
+    <loc>https://wyx6.top/tags/%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -396,6 +347,20 @@
   </url>
   
   <url>
+    <loc>https://wyx6.top/tags/python%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wyx6.top/tags/pypy3/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wyx6.top/tags/Mongodb/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
@@ -410,6 +375,27 @@
   </url>
   
   <url>
+    <loc>https://wyx6.top/tags/%E8%BF%9B%E7%A8%8B/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wyx6.top/tags/%E7%BA%BF%E7%A8%8B/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wyx6.top/tags/%E5%8D%8F%E7%A8%8B/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wyx6.top/tags/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
@@ -417,28 +403,14 @@
   </url>
   
   <url>
+    <loc>https://wyx6.top/tags/redis/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wyx6.top/tags/docker/</loc>
-    <lastmod>2020-12-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/tags/%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
-    <lastmod>2020-12-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/</loc>
-    <lastmod>2020-12-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wyx6.top/tags/RBAC/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -480,6 +452,27 @@
   </url>
   
   <url>
+    <loc>https://wyx6.top/tags/%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wyx6.top/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wyx6.top/tags/RBAC/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wyx6.top/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
@@ -488,6 +481,13 @@
   
   <url>
     <loc>https://wyx6.top/tags/%E9%99%90%E6%B5%81/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wyx6.top/tags/python/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -552,14 +552,14 @@
   </url>
   
   <url>
-    <loc>https://wyx6.top/categories/docker/</loc>
+    <loc>https://wyx6.top/categories/python3/django2-0-4-vue/websocket/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://wyx6.top/categories/python3/django2-0-4-vue/websocket/</loc>
+    <loc>https://wyx6.top/categories/docker/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -573,14 +573,14 @@
   </url>
   
   <url>
-    <loc>https://wyx6.top/categories/python3/django2-0-4/</loc>
+    <loc>https://wyx6.top/categories/python3/django2-0-4-vue/%E9%83%A8%E7%BD%B2/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://wyx6.top/categories/python3/django2-0-4-vue/%E9%83%A8%E7%BD%B2/</loc>
+    <loc>https://wyx6.top/categories/python3/django2-0-4/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
